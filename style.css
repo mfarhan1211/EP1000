@@ -6,6 +6,8 @@ body {
 a{
   text-decoration: none;
   color: black;
+
+
 }
 h1{
   margin-top:0;
@@ -27,8 +29,6 @@ h1{
   font-family: Arial ;
   color: #DCb8b8;
   text-align: center;
-
-
   margin:0
   padding:10px;
   width:1200px;
@@ -39,7 +39,7 @@ h1{
 #content {
   padding-left: 10px;
   font-family:Arial;
-  color:#DCb8b8;
+  color:#DCB8B8;
 
 }
 
@@ -52,8 +52,9 @@ h1{
   list-style: none;
   padding:0;
 }
-#nav.selected {
+.selected {
   font-weight: bold;
+
 }
 
 #main {
@@ -68,4 +69,3 @@ h1{
   color: #DCb8b8;
   text-align:right;
 }
-
