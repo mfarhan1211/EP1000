@@ -1,5 +1,5 @@
 body {
-  background-color: white ;
+  background-color: #50151D;
   font-family:Helvetica, Arial, sans-serif;
 }
 
@@ -8,6 +8,7 @@ a{
   color: black;
 }
 h1{
+  margin-top:0;
   margin:0;
   padding:0;
 
@@ -15,37 +16,37 @@ h1{
 
 
 #container{
-  background-color: white ;
+  background-color: #F04D3A;
   width: 1200px;
   margin-left:auto;
   margin-right:auto;
 }
 
 #header {
-  background-color: #E27D60 ;
-  font-family: helvetica ;
-  color: white;
+  background-color: #501B1D;
+  font-family: Arial ;
+  color: #DCb8b8;
   text-align: center;
 
-  margin:0;
+
+  margin:0
   padding:10px;
-  width:1175px;
+  width:1200px;
   overflow:hidden;
 }
-.topheader{
-  backgroundcolor: #E27D60;
-  overflow:hidden;
-}
+
 
 #content {
   padding-left: 10px;
   font-family:Arial;
+  color:#DCb8b8;
 
 }
 
 #nav {
   width: 150px;
   float: left;
+  color:black;
 }
 #nav ul{
   list-style: none;
@@ -63,7 +64,9 @@ h1{
 #footer{
   clear:both;
   padding:10px;
-  background-color: #999999;
-  color: white;
+  background-color: #520202;
+  color: #DCb8b8;
   text-align:right;
+}
+
 }
