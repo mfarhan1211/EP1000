@@ -1,5 +1,5 @@
 body {
-  background-color: #50151D;
+  background-color: WHITE;
   font-family:Helvetica, Arial, sans-serif;
 }
 
@@ -18,16 +18,16 @@ h1{
 
 
 #container{
-  background-color: #F04D3A;
+  background-color: #D4BCBC;
   width: 1200px;
   margin-left:auto;
   margin-right:auto;
 }
 
 #header {
-  background-color: #501B1D;
+  background-color: #DF4242;
   font-family: Arial ;
-  color: #DCb8b8;
+  color: WHIte;
   text-align: center;
   margin:0
   padding:10px;
@@ -39,7 +39,7 @@ h1{
 #content {
   padding-left: 10px;
   font-family:Arial;
-  color:#DCB8B8;
+  color:black;
 
 }
 
