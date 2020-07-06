@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+       <title>Fusion 360 Features</title>
+       <link rel="stylesheet" type="text/css" href="style.css"/>
+   </head>
+   <body>
+       <div id="container">
+           <div id="header">
+               <h1>Fusion 360 Features</h1>
+           </div>
+           <div id="content">
+               <div id="nav">
+                  <h3>Navigation</h3>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="weekone.html">Safety & Tools</a></li>
+                      <li><a href="weektwo.html">Software Tools & HTML</a></li>
+                      <li><a href="weekthree.html">Webpage Development</a></li>
+                      <li><a href="weekfour.html">Project Management using git</a>
+                      <li><a href="weekfive.html">Computer Aided Design</a>
+                      <li><a href="weeksix.html">Drawing 3D Objects</a></li>
+                      <li><a href="weekseven.html">Modelling 3D Objects</a>
+                      <li><a class="selected" href="weekeight.html">Fusion 360 Features</a>
+                      <li><a href="weeknine.html">Parametric Modelling</a>
+                      <li><a href="weekten.html">3D Printing</a>
+                      <li><a href="weekeleven.html">Preparation for Laser Cutting</a>
+                      <li><a href="weektwelve.html">Simple Input & Output Interfacing</a>
+                      <li><a href="weekthirteen.html">Analog I/O & Input devices</a>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="references.html">References</a></li>
+
+
+                  </ul>
+               </div>
+
+               <div id="main">
+                   <h2>Creating 3D Objects</h2>
+                   <h3>Assignment 5</h3>
+                   <p>1. Follow the tutorial for the Laptop design and implement it.<p>
+                   <h2>Laptop Stand</h2>
+                   <p> I first started by sketching the rough shape of the leg's side profile of the laptop stand. </p>
+                       <td> <img src="images/startsketch.png" width="200" length="100" /></td>
+                       <td> <img src="images/followspecs.png" width="200" length="100" /></td>
+                   <p>Then, I added the constraints, dimensions and angles until the lines turn black, making sure I have a fully defined sketch. Then, I ended the sketch.</p>
+                       <td> <img src="images/name.png" width="200" length="100" /></td>
+                   <p>To create modifiable widths, lengths and thicknesses, I clicked the modify section and clicked change parameters. </p>
+                       <td> <img src="images/appearance.png" width="200" length="100" /></td>
+                   <p>In user parameters, I created the thickness parameter as t (3mm) and leg width parameter as legwidth.</p>
+                   <p>Using extrusion, I extruded the first sketch and put the dimension as t, which is the thickness that I have set earlier on.</p>
+                   <p>I rounded off the edges by using the fillet function.</p>
+                   <p>To make two of the same pieces,I activate the design and copied and pasted to make a duplicate of the leg. </p>
+                   <p>By using joint, I aligned the legs and set the length as legwidth </p>
+                   <p>After finishing the legs, I created the top part of the laptop stand by creating a new component and renamed it top.</p>
+                   <p>I created a new sketch on the slanted top part of the leg.</p>
+                   <p>I roughly drew a rectangle on the sketch and aligned all the necessary parts. And then, I added the appropriate dimensions until the rectangle is fully constrained.</p>
+                   <p>Then, I added tabs and set the distance of the tab as 25mm and the distance of the starting ot the tab to the top as 30mm. To mirror the tab into all four tabs, I drew a vertical line in the middle and a horizontal line in the middle.</p>
+                   <p>Then, using the mirror function, I selected the tab, and mirrored it across the vertical line. Then, I selected both the tabs and mirrored it across the horizontal line. Now there is four tabs.</p>
+                   <p>I finished the sketch and extruded that part with the distance as negative t(thickness parameter)</p>
+                   <p>Under modify, I chose combine, chose the laptop leg as target body and chose the table as the tool body and then cut the excess material away.</p>
+                   <p>I used fillet on the edges of the table of the stand.</p>
+                   <p>To create an extra support, I created an offet plane and offsetted it to underneath the laptop stand. I then created the support using the same method as I did when creating the table of the laptop stand.</p>
+
+                   <h3>Final Product</h3>
+
+                   <h2>Mask Holder</h2>
+                    <p> To create modifiable thickness, width, length and size of teeth of the mask holder, I clicked the modify section and clicked change parameters.</p>
+                    <p> I created parameter t for thickness, w for width, l for length, teethsize for the size of the teeth and textsize for the size of the text on the mask holder.</p>
+                    <p> I started by sketching one half of the mask holder. The constraints and dimensions were set with length as l/2, width as w, and size of teeth as teethsize and then I proceeded to mirror it to make the shape of the mask holder</p>
+                    <p> I then ended the sketch and extruded the piece with thickness t.</p>
+                    <p> Then, I pressed sketch on the piece and clicked create, and then text to create a text on the mask holder. To make the text size adjustable, I changed the height to parameter textsize.</p>
+                    <p> Final Product</p>
+
+
+
+
+
+               </div>
+
+           </div>
+           <div id="footer">
+             Copyright &copy; 2020 Muhammad Farhan
+
+           </div>
