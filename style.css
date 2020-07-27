@@ -69,3 +69,7 @@ h1{
   color: #DCb8b8;
   text-align:right;
 }
+
+table, th, td {
+  border: 1px solid black;
+}
