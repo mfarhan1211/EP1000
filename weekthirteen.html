@@ -41,7 +41,16 @@
                    <h2>Analog Signal</h2>
                    <p>There are two types of electric signals, analog and digital. Analog signals are continuously varying while digital signals are discrete and have specific values.</p>
                    <p>Digital signals can be processed very quickly and can be used to represent signals of different values while analog signals are naturally occuring and do not have discrete voltages</p>
-                    
+
+                    <h3>Debouncing a switch</h3>
+                    <p>Electrical contacts in mechanical pushbutton switches often make and break contact several times when the button is first pushed. A debouncing circuit removes the resulting ripple signal, and provides a clean transition at its output.</p>
+
+                    <h3>Task: Read a switch and make it toggle the led</h3>
+                    <p>Three solutions</p>
+                    <li>1. Simple reading of the switch without debouncing</li>
+                    <li>2. Debouncing the switch using the delay() function</li>
+                    <li>3. Debouncing the switch using the millis() function</li>
+                    <p>Debouncing should be done to minimize the errors</p>
 
 
 
