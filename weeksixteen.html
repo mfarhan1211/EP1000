@@ -27,8 +27,8 @@
                     <li><a href="weektwelve.html">Simple Input & Output Interfacing</a>
                     <li><a href="weekthirteen.html">Analog I/O & Input devices</a>
                     <li><a href="weekfourteen.html">Input Devices</a>
-                    <li><a class="selected"href="weekfifteen.html">Output Devices</a>
-                    <li><a href="weeksixteen.html">Final Project</a>
+                    <li><a href="weekfifteen.html">Output Devices</a>
+                    <li><a class="selected"href="weeksixteen.html">Final Project</a>
                     <li><a href="weekseventeen.html">.</a>
                     <li><a href="about.html">About</a></li>
                     <li><a href="references.html">References</a></li>
@@ -37,6 +37,57 @@
                </div>
 
                <div id="main">
+                   <h2>Project Sketch</h2>
+                   <td> <img src="images/projectsketch.jpeg" width="400" length="300" /></td>
+                   <h3>The Project Design</h3>
+                   <p>The design of the clock project came from the internet. However, the designs I saw are mostly 3D printed and they use a lot of LEDs. What I've done different is that I lasercut 96% of the design and I made the design smaller so that it uses only 30 Neopixels while other designs use 60 neopixels or more. What I have also done different is that I have used wood instead of acrylic to give the clock design a twist.</p>
+
+                   <h3>How to construct this project</h3>
+                   <li>1) Design the box of the project in Fusion360</li>
+                   <p> Design a parametric box on Fusion. For the parametric box, ensure you include a hole for the USB cable and also design one segment for the seven segment, and copy and paste the segment four times.Then extrude the segments to make 4 seven segment holes. Then, include two holes in the middle for it to resemble an actual digital clock.  </p>
+                   <td> <img src="images/clockdesign.png" width="400" length="300" /></td>
+                   <p> For the inside, I made a 2nd lasercut print of the design of the clock digits. The purpose of the this piece is to block out LED light that will wrongly shine on another digit. With this piece, the led lights will reflect clearly and wont shine on other pieces.
+                   <td> <img src="images/2ndpiece.png" width="400" length="300" /></td>
+                   <p> Then, I made another piece which is just a rectangle. The purpose of this piece is to be a board to align and place the LEDS. On this board, you can draw the outline of where the lights will be placed, and then tape the Neopixels on the proper spot, and then solder everything together
+                   <td> <img src="images/3rdpiece.png" width="400" length="300" /></td>
+                   <p> This is what the inside will look like, as well as the outer part of the display</p>
+                   <td> <img src="images/3pieces.png" width="200" length="100" /></td>
+
+                   <li>2) Constructing the electronics of the project</li>
+                   <p> The items I had were 30 Neopixels, a RTC, an Arduino board and wires. I cut the Neopixel strip into 30 seperate Neopixel lights. Then, I used double sided tape and taped each neopixel onto the empty board, according to where the lights are needed. This is how the electronics were wired.
+                   <td> <img src="images/electronics.png" width="400" length="300" /></td>
+                   <p> However, instead of 4 Neopixels per segment, I used 1 neopixel per segment. Make sure that the direction of the neopixel follows the direction of the wire, away from the arduino board.
+                   <td> <img src="images/imageofboard.png" width="400" length="300" /></td>
+                   <h3>Wiring</h3>
+                   <p> Then, solder all the neopixels together. After that, solder the ground wire of the arduino to the ground of the Neopixel and RTC. Also, solder the 5V wire of the arduino to the 5V of the Neopixel and RTC. Connect the RTC's SDA and SCL wire to the Arduino and connect the Neopixel's input wire to input 6 of the arduino board. This will be the wiring for the clock.</p>
+                   <td> <img src="images/wiring.jpeg" width="400" length="300" /></td>
+                   <li>3) Assemble all the parts</li>
+                   <td> <img src="images/assembled.jpeg" width="400" length="300" /></td>
+                   <li>4) Coding</li>
+                   <p> This part is the most complicated part of the entire project and you can choose to find available codes online. What I have done is that I took a code from the internet and changed the code so that it fits my design of one neopixel per segment. This is the link to the code</p>
+
+                   <li>5) 3D Printed Component: Box Holder</li>
+                   <p> Finally, I decided to 3D print 2 pieces of corner holders to make sure that the box will never fall apart easily. This piece will be placed on the bottom corners of the clock box.</p>
+                   <td> <img src="images/corner3d.png" width="300" length="200" /></td>
+
+                   <h2>Original Design Files and Code</h2>
+                   <h3>The box of the Clock that had been laser cutted</h3>
+                   <li><a href="Fusionexercise/clockbox.f3d">Clock Box Laser Cut Fusion File</a></li>
+                   <h3>The Clock Holder piece that had been 3D printed</h3>
+                   <li><a href="Fusionexercise/boxholder.f3d">Clock Holder 3D Print Fusion File</a></li>
+                   <h3>The Code used for the project</h3>
+                   <li><a href="SevenSegmentClock/SevenSegmentClock.ino">SevenSegmentClock Arduino Code</a></li>
+
+                   <h2>What was completed, what was successful, what needs more work<h2>
+                   <h3>What Was Completed</h3>
+                   <p>I managed to make a functional clock with Neopixels that changes color.</p>
+
+                   <h3>What was successful</h3>
+                   <p> The design and the lights of the clock makes the project look very attractive and simple. The project works like a normal clock and is simple.</p>
+
+                   <h3>What needs more work</h3>
+                   <p> What needs more work is that a button could have been added to make the clock switch on and off at any time. The code of the project is in 24h format. Hence, it would be better if I could change it such that you can choose between a 12-hour format and a 24-hour format.</p>
+
                    <h2>Seven Segment Display</h2>
                    <h3>Bill Of Materials</h3>
 
